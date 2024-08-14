@@ -60,3 +60,9 @@ select percent_remaining from battery;
 ```
 select * from homebrew_packages;
 ```
+
+## View non Apple kernel extensions
+
+```
+select * from kernel_extensions where name NOT LIKE 'com.apple%';
+```
