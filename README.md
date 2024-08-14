@@ -1,6 +1,30 @@
 # osquery-queries
 Repository of sample queries for osquery. Submissions welcomed!
 
+## Log in to interactive mode
+
+```
+osqueryi
+```
+
+## See all available data (represented as tables)
+
+```
+.tables
+```
+
+## See the table layout for the `uptime` table
+
+```
+.schema uptime
+```
+
+## View system uptime
+
+```
+select * from uptime;
+```
+
 ## Find files across filesystem ending in .1234
 
 ```
