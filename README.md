@@ -18,3 +18,9 @@ SELECT filename, path, mode FROM file WHERE directory == '/tmp' and mode > '0644
 ```
 SELECT filename, path, mode, size FROM file WHERE directory == '/tmp' and size > 5;
 ```
+
+## See all non Apple Apps installed on MacOS
+
+```
+select name from apps where bundle_identifier NOT LIKE 'com.apple.%%';
+```
