@@ -54,3 +54,9 @@ select name from apps where bundle_identifier NOT LIKE 'com.apple.%%';
 ```
 select percent_remaining from battery;
 ```
+
+## Which packages are installed by homebrew and at which versions?
+
+```
+select * from homebrew_packages;
+```
