@@ -48,3 +48,9 @@ SELECT filename, path, mode, size FROM file WHERE directory == '/tmp' and size >
 ```
 select name from apps where bundle_identifier NOT LIKE 'com.apple.%%';
 ```
+
+## Get battery percentage
+
+```
+select percent_remaining from battery;
+```
