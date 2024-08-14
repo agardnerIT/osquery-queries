@@ -12,3 +12,9 @@ SELECT filename, path FROM file WHERE directory LIKE '/%%' and filename LIKE '%.
 ```
 SELECT filename, path, mode FROM file WHERE directory == '/tmp' and mode > '0644';
 ```
+
+## Find files in a directory bigger than X bytes
+
+```
+SELECT filename, path, mode, size FROM file WHERE directory == '/tmp' and size > 5;
+```
