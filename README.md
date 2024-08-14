@@ -67,8 +67,14 @@ select * from homebrew_packages;
 select * from kernel_extensions where name NOT LIKE 'com.apple%';
 ```
 
-## how much RAM and what type is in the system?
+## How much RAM and what type is in the system?
 
 ```
 select memory_type, size from memory_devices;
+```
+
+## Get system time
+
+```
+select * from time;
 ```
