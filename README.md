@@ -7,6 +7,12 @@ Repository of sample queries for osquery. Submissions welcomed!
 osqueryi
 ```
 
+## Exit interactive mode
+
+```
+.exit
+```
+
 ## See all available data (represented as tables)
 
 ```
