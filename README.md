@@ -84,3 +84,10 @@ select memory_type, size from memory_devices;
 ```
 select * from time;
 ```
+
+## Find the process ID using a particular port
+Equivalent to `lsof -i :8888`
+
+```
+SELECT p.pid AS process_id, lp.port AS port FROM listening_ports lp JOIN processes p ON lp.pid = p.pid WHERE lp.port = 8888;
+```
